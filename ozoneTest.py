@@ -32,7 +32,7 @@ def read_serial(port):
           print(f"Supposed ppm (ppb?) value: { data[4] * 256 + data[5]}") # multiply by 0.1??
           print(f"Supposed full range value: { data[6] * 256 + data[7]}") # multiply by 0.1??
 
-
+        print()
       time.sleep(1)  
 
   except serial.SerialException as e:
